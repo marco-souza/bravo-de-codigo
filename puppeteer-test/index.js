@@ -13,12 +13,13 @@ const main = async () => {
     await page.goto('https://app.smarttbot.com', { waitUntil: 'networkidle0' })
 
     // check if #login-username is present
-    console.assert(!page.$("#login-username"))
+    console.assert(page.$("#login-username"))
     // check if #login-password is present
     console.assert(page.$("#login-password"))
     // check if #login-busson is present
     console.assert(page.$("#login-button"))
-    await page.screenshot({ path: 'example.png' })
+    await page.screenshot({ path: './screenshots/example.png' })
+    console.log("Your test passed! :)");
 
     // Close connection
     await browser.close()
