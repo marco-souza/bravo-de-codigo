@@ -1,9 +1,12 @@
-FROM node:10-alpine
+FROM alekzonder/puppeteer:latest
 
 WORKDIR /app
 
-COPY . /app
+COPY index.js /app/index.js
+COPY package.json /app/package.json
+COPY package-lock.json /app/package-lock.json
 
-RUN npm install .
+RUN npm install \
+    && mkdir /app/screenshots
 
-CMD [ "node", "index.js" ]
+CMD [ "npm", "start" ]
