@@ -1,0 +1,41 @@
+Arguments: 
+  /usr/local/bin/node /home/marco/.npm-global/bin/yarn add puppeteer
+
+PATH: 
+  /home/marco/go/bin:/home/marco/.npm-global/bin:/usr/local/sbin:/usr/local/bin:/home/marco/go/bin:/home/marco/.npm-global/bin:/usr/local/sbin:/usr/local/bin:/tmp/.mount_hyper.WrnEh8/app:/tmp/.mount_hyper.WrnEh8/usr/sbin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/opt/mssql-tools/bin
+
+Yarn version: 
+  1.15.2
+
+Node version: 
+  10.15.1
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: https://npm.smarttbot.com/puppeteer: unregistered users are not allowed to access package puppeteer
+      at Request.params.callback [as _callback] (/home/marco/.npm-global/lib/node_modules/yarn/lib/cli.js:66058:18)
+      at Request.self.callback (/home/marco/.npm-global/lib/node_modules/yarn/lib/cli.js:129541:22)
+      at Request.emit (events.js:189:13)
+      at Request.<anonymous> (/home/marco/.npm-global/lib/node_modules/yarn/lib/cli.js:130513:10)
+      at Request.emit (events.js:189:13)
+      at Gunzip.<anonymous> (/home/marco/.npm-global/lib/node_modules/yarn/lib/cli.js:130435:12)
+      at Object.onceWrapper (events.js:277:13)
+      at Gunzip.emit (events.js:194:15)
+      at endReadableNT (_stream_readable.js:1103:12)
+      at process._tickCallback (internal/process/next_tick.js:63:19)
+
+npm manifest: 
+  {
+    "name": "puppeteer-test",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
