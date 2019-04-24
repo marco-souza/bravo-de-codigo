@@ -4,9 +4,10 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "node index.js"
+    "start": "nodemon -e 'node index.js' -w *.js"
   },
   "dependencies": {
+    "nodemon": "^1.18.11",
     "puppeteer": "^1.14.0",
     "puppeteer-core": "^1.14.0"
   }
